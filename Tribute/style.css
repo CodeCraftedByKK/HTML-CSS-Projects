@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --red: #d2191f
+
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-optical-sizing: auto;
+    background-color: #fad1d1;
+    padding: 80px;
+
+}
+
+section{
+    max-width: 1186px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+
+    background-color: white;
+    padding: 24px 48px;
+    border: 2px dashed red;
+
+    h1{
+        font-size: 65px;
+        color: yellow;
+        font-weight: 900;
+        
+    }
+
+
+}
+
+.read-more {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+
+    padding: 12px 25px;
+
+    background-color: #8b0000;
+    color: white;
+
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+
+    border: 2px solid #ffcc66;
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+/* When mouse is placed over button */
+.read-more:hover {
+    background-color: #ffcc66;
+    color: #8b0000;
+
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ffcc66;
+}
