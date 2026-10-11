@@ -1,0 +1,43 @@
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+
+}
+
+.profile-card{
+    max-width: 370px;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+.image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: red;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.image-profile-jpg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-sizing: border-box;
+    display: block;
+}
