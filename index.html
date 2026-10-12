@@ -1,39 +1,108 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My HTML CSS Projects</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My HTML &amp; CSS Projects</title>
+    <meta name="description" content="A collection of small HTML and CSS projects I built while learning web development.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>My HTML & CSS Projects</h1>
+    <header class="hero">
+        <p class="hero-tag">Learning in public</p>
+        <h1>My HTML &amp; CSS Projects</h1>
+        <p class="hero-text">
+            Small pages I built to practice layouts, forms and styling.
+            Pick one to open it live.
+        </p>
+    </header>
 
-    <h2>My Projects</h2>
+    <main>
+        <h2 class="section-title">All projects</h2>
 
-    <a href="Food-banner/">Food Banner</a>
-    <br><br>
+        <ul class="grid">
 
-    <a href="https://codecraftedbykk.github.io/HTML-CSS-Projects/Form/Form.html">
-    Form
-</a>
-    <br><br>
+            <li>
+                <a class="card" href="Food-banner/index.html">
+                    <span class="card-icon" aria-hidden="true">🍔</span>
+                    <span class="card-title">Food Banner</span>
+                    <span class="card-text">A banner section for a food brand.</span>
+                    <span class="card-action">Open project</span>
+                </a>
+            </li>
 
-    <a href="Tribute/">Tribute Page</a>
+            <li>
+                <a class="card" href="Form/Form.html">
+                    <span class="card-icon" aria-hidden="true">📝</span>
+                    <span class="card-title">Form</span>
+                    <span class="card-text">A styled form with input fields.</span>
+                    <span class="card-action">Open project</span>
+                </a>
+            </li>
 
-<br>
-    <a href="Portfolio/">Portfolio</a>
+            <li>
+                <a class="card" href="Tribute/index.html">
+                    <span class="card-icon" aria-hidden="true">🏆</span>
+                    <span class="card-title">Tribute Page</span>
+                    <span class="card-text">A page honouring someone I admire.</span>
+                    <span class="card-action">Open project</span>
+                </a>
+            </li>
 
-    <br><br>
+            <li>
+                <a class="card" href="Portfolio/index.html">
+                    <span class="card-icon" aria-hidden="true">💼</span>
+                    <span class="card-title">Portfolio</span>
+                    <span class="card-text">A personal page to show my work.</span>
+                    <span class="card-action">Open project</span>
+                </a>
+            </li>
 
-    <a href="Shoe Website/">Shoe Webpage</a>
+            <li>
+                <a class="card" href="Shoe%20Website/index.html">
+                    <span class="card-icon" aria-hidden="true">👟</span>
+                    <span class="card-title">Shoe Webpage</span>
+                    <span class="card-text">A product page for a shoe brand.</span>
+                    <span class="card-action">Open project</span>
+                </a>
+            </li>
 
-    <br><br>
-    
-    <a href="Contact-Form/">Contact Form</a>
+            <li>
+                <a class="card" href="Contact-Form/index.html">
+                    <span class="card-icon" aria-hidden="true">✉️</span>
+                    <span class="card-title">Contact Form</span>
+                    <span class="card-text">A simple form to get in touch.</span>
+                    <span class="card-action">Open project</span>
+                </a>
+            </li>
 
-    <br><br>
+            <li>
+                <a class="card" href="Profile-Card/index.html">
+                    <span class="card-icon" aria-hidden="true">🪪</span>
+                    <span class="card-title">Profile Card</span>
+                    <span class="card-text">A compact card with my details.</span>
+                    <span class="card-action">Open project</span>
+                </a>
+            </li>
 
-    <a href="Profile-Card/">Profile Card</a>
+        </ul>
+    </main>
+
+    <footer class="footer">
+        <p>
+            Source code on
+            <a href="https://github.com/codecraftedbykk/HTML-CSS-Projects">GitHub</a>
+        </p>
+    </footer>
 
 </body>
 </html>
+```
