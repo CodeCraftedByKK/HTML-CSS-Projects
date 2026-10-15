@@ -1,0 +1,60 @@
+body{
+  
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+
+
+
+#firstpara{
+    background-color: yellow;
+    color: red;
+    font-size: 30px;
+    font-family: cursive;
+    border-style: solid;
+    border-color: black;
+    border-width: 15px; 
+}
+
+#secondpara{
+    background-color: blue;
+    color: white;
+    font-size: large;
+    font-weight: 100;
+    border-style: dashed;
+    border-color: red;
+    border-radius: 5px;
+    border-width: 2px;
+
+}
+
+
+#thirdpara{
+    background-color: black;
+    color: white;
+    font-size: large;
+    border-style: solid;
+    border-color: pink;
+    border-width: 1cap;
+    border-radius: 30px;
+    height: 200px;
+    text-align: center;
+    padding-top: 90px;
+}
+
+#forthpara{
+    border-top: dashed black 5px;
+    border-bottom: solid red 3px
+    ;
+}
+
+span{
+    background-color: aqua;
+    width: 500px;
+    height: 200px
+    
+    
+    ;
+}
