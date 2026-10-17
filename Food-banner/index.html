@@ -1,13 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Banner</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spice &amp; Co. | Modern Indian-Fusion Restaurant</title>
+<meta name="description" content="Spice &amp; Co. serves modern Indian-fusion dishes made with fresh ingredients and slow-toasted spices.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Welcome to Food Banner</h1>
-    
+<!-- ===== NAVBAR ===== -->
+<header class="site-header">
+  <nav class="nav container" aria-label="Main navigation">
+    <a href="#home" class="logo" aria-label="Spice &amp; Co. home">Spice <span>&amp;</span> Co.</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+    <label for="nav-toggle" class="burger" aria-hidden="true"><span></span><span></span><span></span></label>
+    <ul class="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" class="btn btn-primary">Book a Table</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<!-- ===== HERO ===== -->
+<section class="hero" id="home" aria-label="Welcome">
+  <div class="container hero-inner">
+    <h1>Where old spice routes meet <em>new ideas.</em></h1>
+    <p>Slow-toasted spices, charcoal-fired breads and bold, modern plates inspired by kitchens across India.</p>
+    <div class="hero-cta">
+      <a href="#menu" class="btn btn-primary">Explore the menu</a>
+      <a href="#contact" class="btn btn-ghost">Reserve a table</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== OFFER STRIP ===== -->
+<aside class="offer" aria-label="Current offer">
+  <div class="container"><strong>20% off weekend dinners</strong> every Friday to Sunday, 6 to 10 pm. <span class="tag">Code: SPICE20</span></div>
+</aside>
+
+<!-- ===== FEATURED DISHES ===== -->
+<section id="featured">
+  <div class="container">
+    <div class="section-head"><h2>Guest favourites</h2><p>The plates our regulars order again and again.</p></div>
+    <div class="grid-featured">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=700&q=80" alt="Creamy butter chicken in a copper bowl with naan" loading="lazy">
+        <div class="card-body"><h3>Smoked Butter Chicken</h3><p>Tandoor-grilled chicken in a velvety tomato and fenugreek sauce.</p>
+          <div class="card-foot"><span class="price">$18</span><a href="#contact" class="btn btn-red" aria-label="Order Smoked Butter Chicken">Order Now</a></div></div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=700&q=80" alt="Rich red curry served with fresh herbs" loading="lazy">
+        <div class="card-body"><h3>Lamb Rogan Josh</h3><p>Kashmiri chilli, slow-braised lamb shoulder and a hint of saffron.</p>
+          <div class="card-foot"><span class="price">$21</span><a href="#contact" class="btn btn-red" aria-label="Order Lamb Rogan Josh">Order Now</a></div></div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=700&q=80" alt="Grilled paneer and vegetable skewers on a plate" loading="lazy">
+        <div class="card-body"><h3>Charred Paneer Tikka</h3><p>Smoky cottage cheese skewers with mint chutney and pickled onion.</p>
+          <div class="card-foot"><span class="price">$14</span><a href="#contact" class="btn btn-red" aria-label="Order Charred Paneer Tikka">Order Now</a></div></div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=80" alt="Colourful grain and vegetable bowl with spiced chickpeas" loading="lazy">
+        <div class="card-body"><h3>Masala Chickpea Bowl</h3><p>Spiced chickpeas, roasted veg, quinoa and a cooling raita drizzle.</p>
+          <div class="card-foot"><span class="price">$15</span><a href="#contact" class="btn btn-red" aria-label="Order Masala Chickpea Bowl">Order Now</a></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FULL MENU ===== -->
+<section class="menu" id="menu">
+  <div class="container">
+    <div class="section-head"><h2>The full menu</h2><p>Made fresh daily. Tell us about allergies and we will happily adapt.</p></div>
+    <div class="menu-grid">
+      <div class="menu-cat"><h3>Starters</h3>
+        <div class="menu-item"><div><h4>Crispy Samosa Chaat</h4><p>Tamarind, yoghurt, pomegranate</p></div><span class="price">$9</span></div>
+        <div class="menu-item"><div><h4>Chilli Garlic Prawns</h4><p>Curry leaf butter, lime</p></div><span class="price">$13</span></div>
+        <div class="menu-item"><div><h4>Hara Bhara Kebab</h4><p>Spinach and pea patties</p></div><span class="price">$8</span></div>
+        <div class="menu-item"><div><h4>Masala Fries</h4><p>Chaat spice, mint mayo</p></div><span class="price">$7</span></div>
+      </div>
+      <div class="menu-cat"><h3>Mains</h3>
+        <div class="menu-item"><div><h4>Hyderabadi Biryani</h4><p>Saffron rice, slow-cooked, raita</p></div><span class="price">$19</span></div>
+        <div class="menu-item"><div><h4>Dal Makhani</h4><p>Black lentils simmered overnight</p></div><span class="price">$15</span></div>
+        <div class="menu-item"><div><h4>Goan Fish Curry</h4><p>Coconut, kokum, red chilli</p></div><span class="price">$20</span></div>
+        <div class="menu-item"><div><h4>Garlic Butter Naan</h4><p>Baked fresh in our tandoor</p></div><span class="price">$4</span></div>
+      </div>
+      <div class="menu-cat"><h3>Desserts</h3>
+        <div class="menu-item"><div><h4>Gulab Jamun Cheesecake</h4><p>Rose syrup, pistachio crumb</p></div><span class="price">$9</span></div>
+        <div class="menu-item"><div><h4>Kulfi Trio</h4><p>Mango, pistachio, cardamom</p></div><span class="price">$8</span></div>
+        <div class="menu-item"><div><h4>Warm Jalebi</h4><p>With rabdi and saffron</p></div><span class="price">$7</span></div>
+        <div class="menu-item"><div><h4>Chai Crème Brûlée</h4><p>Masala chai custard</p></div><span class="price">$9</span></div>
+      </div>
+      <div class="menu-cat"><h3>Drinks</h3>
+        <div class="menu-item"><div><h4>Mango Lassi</h4><p>Alphonso mango, yoghurt</p></div><span class="price">$6</span></div>
+        <div class="menu-item"><div><h4>Masala Chai</h4><p>Ginger, cardamom, black tea</p></div><span class="price">$4</span></div>
+        <div class="menu-item"><div><h4>Spiced Mule</h4><p>Ginger beer, lime, chaat masala</p></div><span class="price">$11</span></div>
+        <div class="menu-item"><div><h4>Rose Lemonade</h4><p>Fresh lemon, rose, mint</p></div><span class="price">$5</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="container about-wrap">
+    <img class="about-img" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80" alt="Warmly lit restaurant dining room with set tables" loading="lazy">
+    <div class="about-text">
+      <h2>A family recipe book, rewritten</h2>
+      <p>Spice &amp; Co. began in 2012 with one tandoor and a notebook of our grandmother's recipes. We still toast and grind our spices in-house every morning.</p>
+      <p>Today our chefs mix those traditions with techniques from around the world, so every plate feels familiar and a little surprising.</p>
+      <div class="stats">
+        <div class="stat"><b>14</b><span>Years cooking</span></div>
+        <div class="stat"><b>60+</b><span>Signature dishes</span></div>
+        <div class="stat"><b>50k</b><span>Happy guests</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="section-head"><h2>From our kitchen</h2><p>A look at what is coming out of the pass tonight.</p></div>
+    <div class="gallery-grid">
+      <figure class="wide"><img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=900&q=80" alt="Indian thali with curries, rice and bread" loading="lazy"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=600&q=80" alt="Bowl of tikka masala curry" loading="lazy"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80" alt="Chargrilled skewers fresh off the grill" loading="lazy"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1517244683847-7456b63c5969?auto=format&fit=crop&w=600&q=80" alt="Plated dessert with a berry garnish" loading="lazy"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=600&q=80" alt="Fresh salad with vibrant vegetables" loading="lazy"></figure>
+      <figure class="wide"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80" alt="Beautifully plated main course on a dark table" loading="lazy"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=600&q=80" alt="Butter chicken with naan bread" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section id="reviews">
+  <div class="container">
+    <div class="section-head"><h2>Kind words from our guests</h2></div>
+    <div class="quotes">
+      <figure class="quote"><div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>The butter chicken is the best I have had outside my mother's kitchen. Warm service and a gorgeous room.</p>
+        <figcaption class="who"><span class="avatar" aria-hidden="true">AM</span><div>Aarti M.<small>Birthday dinner</small></div></figcaption></figure>
+      <figure class="quote"><div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>Inventive without being gimmicky. The gulab jamun cheesecake alone is worth the trip across town.</p>
+        <figcaption class="who"><span class="avatar b" aria-hidden="true">DR</span><div>Daniel R.<small>Date night</small></div></figcaption></figure>
+      <figure class="quote"><div class="stars" role="img" aria-label="4 out of 5 stars">★★★★☆</div>
+        <p>Great vegetarian options and the staff checked every allergy twice. We booked our team lunch here again.</p>
+        <figcaption class="who"><span class="avatar c" aria-hidden="true">PS</span><div>Priya S.<small>Team lunch</small></div></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RESERVATION / CONTACT ===== -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-head"><h2>Book a table</h2><p>Reserve online or call us. We will confirm within the hour.</p></div>
+    <div class="contact-wrap">
+      <form action="#" method="post" aria-label="Table reservation form">
+        <div class="row">
+          <div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" required autocomplete="name"></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+          <div class="field"><label for="date">Date</label><input id="date" name="date" type="date" required></div>
+          <div class="field"><label for="guests">Guests</label>
+            <select id="guests" name="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7+</option></select></div>
+        </div>
+        <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="4" placeholder="Allergies, celebrations, seating requests"></textarea></div>
+        <button class="btn btn-red" type="submit">Confirm reservation</button>
+      </form>
+      <div class="info">
+        <h3>Visit us</h3>
+        <ul>
+          <li><b>Address:</b> 24 Saffron Lane, Old Market, Mathura</li>
+          <li><b>Phone:</b> <a href="tel:+910000000000">+91 00000 00000</a></li>
+          <li><b>Mon to Thu:</b> 12 pm to 10 pm</li>
+          <li><b>Fri to Sun:</b> 12 pm to 11:30 pm</li>
+        </ul>
+        <div class="map" role="img" aria-label="Map placeholder">Google Maps embed goes here</div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="#home" class="logo" aria-label="Spice &amp; Co. home">Spice <span>&amp;</span> Co.</a>
+        <p style="margin-top:.7rem;max-width:300px">Modern Indian-fusion cooking, made with care.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">Ig</a><a href="#" aria-label="Facebook">Fb</a><a href="#" aria-label="X (Twitter)">X</a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <ul><li><a href="#menu">Menu</a></li><li><a href="#about">About</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#contact">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4>Get offers in your inbox</h4>
+        <form class="news" action="#" aria-label="Newsletter signup" style="background:none;padding:0;box-shadow:none">
+          <input type="email" placeholder="Your email" aria-label="Email address" required>
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <p class="copy">&copy; 2026 Spice &amp; Co. All rights reserved.</p>
+  </div>
+</footer>
+
 </body>
 </html>
