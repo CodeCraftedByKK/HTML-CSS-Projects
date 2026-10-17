@@ -1,0 +1,249 @@
+/* ===== Tokens ===== */
+:root {
+  --bg-1: #ffe4e1;          /* MistyRose, kept from your original */
+  --bg-2: #fbd0d8;
+  --card: #ffffff;
+  --ink: #2b2230;
+  --muted: #7a6e80;
+  --line: #eadde0;
+  --field: #fdf8f8;
+  --accent: #c2185b;
+  --accent-dark: #9c1049;
+  --accent-soft: #fde7ef;
+  --radius: 14px;
+  --shadow: 0 20px 50px rgba(150, 40, 80, 0.18);
+  --font: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* ===== Reset & base ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font);
+  color: var(--ink);
+  line-height: 1.6;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--bg-1), var(--bg-2));
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem 3rem;
+}
+
+/* ===== Card ===== */
+.card {
+  width: 100%;
+  max-width: 760px;
+  background: var(--card);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.card-head {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(120deg, var(--accent), #e8517f);
+}
+.card-head h1 { font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 700; }
+.card-head p { margin-top: .3rem; opacity: .92; font-size: .95rem; }
+
+/* ===== Sections ===== */
+.group {
+  padding: 1.6rem 1.5rem 0.4rem;
+  border-bottom: 1px solid var(--line);
+}
+.group:last-of-type { border-bottom: 0; }
+
+.group h2 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 1.1rem;
+  padding-left: .7rem;
+  border-left: 4px solid var(--accent);
+}
+
+/* ===== Fields ===== */
+.field {
+  border: 0;
+  margin-bottom: 1.2rem;
+  display: grid;
+  gap: .4rem;
+}
+
+.label {
+  font-weight: 500;
+  font-size: .9rem;
+  padding: 0;
+}
+.label small { font-weight: 400; color: var(--muted); }
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+  width: 100%;
+  font: inherit;
+  font-size: .95rem;
+  color: var(--ink);
+  background: var(--field);
+  border: 1.5px solid var(--line);
+  border-radius: 10px;
+  padding: .7rem .9rem;
+  transition: border-color .2s, box-shadow .2s, background .2s;
+}
+
+::placeholder { color: #aa9fae; }
+
+input:hover, select:hover, textarea:hover { border-color: #dcc3cb; }
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  background: #fff;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px rgba(194, 24, 91, .15);
+}
+
+textarea { resize: vertical; min-height: 110px; }
+
+select {
+  appearance: none;
+  cursor: pointer;
+  padding-right: 2.4rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' stroke='%23c2185b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+}
+
+/* Input rows */
+.inputs { display: grid; gap: .7rem; }
+.inputs.two { grid-template-columns: 1fr; }
+.inputs.three { grid-template-columns: 1fr 1fr 1.4fr; }
+
+.phone { display: grid; grid-template-columns: 76px 1fr; gap: .7rem; }
+.phone .code { text-align: center; font-weight: 500; }
+
+/* File input */
+input[type="file"] {
+  width: 100%;
+  font: inherit;
+  font-size: .9rem;
+  color: var(--muted);
+  border: 1.5px dashed #dcb6c3;
+  border-radius: 10px;
+  padding: .6rem;
+  background: var(--field);
+  cursor: pointer;
+}
+input[type="file"]::file-selector-button {
+  font: inherit;
+  font-weight: 500;
+  border: 0;
+  border-radius: 8px;
+  padding: .5rem 1rem;
+  margin-right: .9rem;
+  color: #fff;
+  background: var(--accent);
+  cursor: pointer;
+  transition: background .2s;
+}
+input[type="file"]::file-selector-button:hover { background: var(--accent-dark); }
+input[type="file"]:focus-visible { outline: 3px solid rgba(194, 24, 91, .35); outline-offset: 2px; }
+
+/* ===== Radio & checkbox pills ===== */
+.choices { display: flex; flex-wrap: wrap; gap: .6rem; }
+
+.choice {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .5rem 1rem;
+  font-size: .9rem;
+  background: var(--field);
+  border: 1.5px solid var(--line);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background .2s, border-color .2s, color .2s, transform .2s;
+}
+.choice:hover { border-color: var(--accent); transform: translateY(-1px); }
+
+.choice input {
+  accent-color: var(--accent);
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+.choice:has(input:checked) {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent-dark);
+  font-weight: 500;
+}
+.choice:has(input:focus-visible) { outline: 3px solid rgba(194, 24, 91, .35); outline-offset: 2px; }
+
+/* ===== Buttons ===== */
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: .8rem;
+  padding: 1.5rem;
+  background: #fff7f9;
+  border-top: 1px solid var(--line);
+}
+
+.btn {
+  font: inherit;
+  font-weight: 600;
+  font-size: .95rem;
+  border-radius: 999px;
+  padding: .75rem 2rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform .2s, box-shadow .2s, background .2s, color .2s;
+}
+.btn:focus-visible { outline: 3px solid rgba(194, 24, 91, .4); outline-offset: 3px; }
+
+.btn-primary {
+  color: #fff;
+  background: linear-gradient(120deg, var(--accent), #e8517f);
+  box-shadow: 0 8px 18px rgba(194, 24, 91, .3);
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 24px rgba(194, 24, 91, .4); }
+.btn-primary:active { transform: translateY(0); }
+
+.btn-ghost { color: var(--accent); background: transparent; border-color: #e7bccb; }
+.btn-ghost:hover { background: var(--accent-soft); }
+
+/* ===== Larger screens ===== */
+@media (min-width: 600px) {
+  .page { padding: 3rem 1.5rem 4rem; }
+  .card-head { padding: 2.4rem 2rem; }
+  .group { padding: 1.8rem 2rem .5rem; }
+  .actions { padding: 1.5rem 2rem; }
+
+  .inputs.two { grid-template-columns: 1fr 1fr; }
+  .inputs.three { max-width: 340px; }
+
+  /* Label on the left, inputs on the right, like your original table */
+  .field { grid-template-columns: 170px 1fr; align-items: start; gap: 1rem; }
+  .field > .label { padding-top: .75rem; }
+  .field > .inputs, .field > .choices, .field > .phone { grid-column: 2; }
+}
+
+/* ===== Small phones ===== */
+@media (max-width: 420px) {
+  .actions { flex-direction: column-reverse; }
+  .btn { width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}

@@ -4,173 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Registration Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="student-form.css">
 </head>
-<body bgcolor="MistyRose">
-    
+<body>
 
-    <form>
-        <table align="center" width="700" cellpaddinig="10"> 
+<main class="page">
+    <form class="card" action="#" method="post" enctype="multipart/form-data">
 
-            <tr>
-                <td colspan="2" align="center">
-                 <h1>Student Registration Form</h1>    
-                </td>
-            </tr>
+        <header class="card-head">
+            <h1>Student Registration Form</h1>
+            <p>Fill in the details below to complete your registration.</p>
+        </header>
 
+        <!-- Personal details -->
+        <section class="group">
+            <h2>Personal details</h2>
 
-            <tr>
-                <td>Student Name</td>
-                <td>
-                    <input type="text" size="21" placeholder="First Name">
-                </td>
+            <div class="field">
+                <span class="label">Student Name</span>
+                <div class="inputs two">
+                    <input type="text" name="student_first" placeholder="First Name" aria-label="Student first name" required>
+                    <input type="text" name="student_last" placeholder="Last Name" aria-label="Student last name" required>
+                </div>
+            </div>
 
-                <td>
-                    <input type="text" size="21" placeholder="Last Name">
-                </td>
-            </tr>
+            <div class="field">
+                <span class="label">Father's Name</span>
+                <div class="inputs two">
+                    <input type="text" name="father_first" placeholder="First Name" aria-label="Father's first name">
+                    <input type="text" name="father_last" placeholder="Last Name" aria-label="Father's last name">
+                </div>
+            </div>
 
+            <div class="field">
+                <span class="label">Mother's Name</span>
+                <div class="inputs two">
+                    <input type="text" name="mother_first" placeholder="First Name" aria-label="Mother's first name">
+                    <input type="text" name="mother_last" placeholder="Last Name" aria-label="Mother's last name">
+                </div>
+            </div>
 
-            <tr>
-                <td>Father's Name</td>
-                <td>
-                    <input type="text" size="21" placeholder="First Name">
-                </td>
+            <div class="field">
+                <span class="label">Date of Birth <small>(DD-MM-YYYY)</small></span>
+                <div class="inputs three">
+                    <input type="text" name="dob_day" placeholder="Day" maxlength="2" inputmode="numeric" aria-label="Day of birth">
+                    <input type="text" name="dob_month" placeholder="Month" maxlength="2" inputmode="numeric" aria-label="Month of birth">
+                    <input type="text" name="dob_year" placeholder="Year" maxlength="4" inputmode="numeric" aria-label="Year of birth">
+                </div>
+            </div>
 
-                <td>
-                    <input type="text" size="21" placeholder="Last Name">
-                </td>
-            </tr>
+            <fieldset class="field">
+                <legend class="label">Gender</legend>
+                <div class="choices">
+                    <label class="choice"><input type="radio" name="gender" value="male"> Male</label>
+                    <label class="choice"><input type="radio" name="gender" value="female"> Female</label>
+                    <label class="choice"><input type="radio" name="gender" value="na"> Prefer not to say</label>
+                </div>
+            </fieldset>
+        </section>
 
-            <tr>
-                <td>Mother's Name</td>
-                <td>
-                    <input type="text" size="21" placeholder="First Name">
-                </td>
-                
-                <td>
-                    <input type="text" size="21" placeholder="Last Name">
-                </td>
-            </tr>
+        <!-- Contact & login -->
+        <section class="group">
+            <h2>Contact &amp; login</h2>
 
-            <tr>
-                <td>Date of Birth</td>
-                <td>
-                <input type="text" size="3" placeholder="Day">
-                <input type="text" size="3" placeholder="Month">
-                <input type="text" size="8" placeholder="Year">
-                <i>(DD-MM-YYYY)</i>
-                </td>
-            </tr>
+            <div class="field">
+                <label class="label" for="mobile">Mobile No.</label>
+                <div class="phone">
+                    <input type="text" value="+91" aria-label="Country code" class="code">
+                    <input type="tel" id="mobile" name="mobile" inputmode="numeric" maxlength="10" placeholder="10-digit number">
+                </div>
+            </div>
 
+            <div class="field">
+                <label class="label" for="email">Email id</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email">
+            </div>
 
-            <tr>
-                <td>Mobile No.</td>
-                <td><input type="text" size="1" value="+91">
-                <input type="text" size="42">
-                </td>
-            </tr>
+            <div class="field">
+                <label class="label" for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" autocomplete="new-password">
+            </div>
+        </section>
 
-            <tr>
-                <td>Email id: </td>
-                <td>
-                    <input type="text" size="50">
-                </td>
-            </tr>
+        <!-- Academic -->
+        <section class="group">
+            <h2>Academic details</h2>
 
-            <tr>
-                <td>Password:</td>
-                <td>
-                    <input type="password" size="50">
-                </td>
-            </tr>
+            <fieldset class="field">
+                <legend class="label">Department</legend>
+                <div class="choices">
+                    <label class="choice"><input type="checkbox" name="dept" value="cse"> CSE</label>
+                    <label class="choice"><input type="checkbox" name="dept" value="civil"> Civil</label>
+                    <label class="choice"><input type="checkbox" name="dept" value="mech"> Mechanical</label>
+                    <label class="choice"><input type="checkbox" name="dept" value="ece"> ECE</label>
+                    <label class="choice"><input type="checkbox" name="dept" value="it"> IT</label>
+                    <label class="choice"><input type="checkbox" name="dept" value="other"> Other</label>
+                </div>
+            </fieldset>
 
-            <tr>
-                <td>Gender: </td>
-                <td>
-                    <input type="radio" name="g"> Male
-                    
-                    <input type="radio" name="g"> Female
-
-                
-                    <input type="radio" name="g"> Prefer Not to Say 
-                </td>
-            </tr>
-
-            <tr>
-                <td>Department</td>
-                <td>
-                    <input type="checkbox"> CSE
-                    
-                    <input type="checkbox"> Civil  
-                    
-                    <input type="checkbox"> Mechanical
-                    
-                    <input type="checkbox"> ECE
-
-                    
-                    <input type="checkbox"> IT
-                    
-                    <input type="checkbox"> Other
-                </td>
-            </tr>
-
-            <tr>
-                <td>Course: </td>
-                <td>
-                    <select>
-                      
-                        <option>Select Current Course </option>
+            <div class="field">
+                <label class="label" for="course">Course</label>
+                <select id="course" name="course">
+                    <option value="" selected disabled>Select current course</option>
                     <option>Python</option>
                     <option>Java</option>
                     <option>C#</option>
                     <option>HTML</option>
                     <option>None of the above</option>
+                </select>
+            </div>
 
+            <div class="field">
+                <label class="label" for="photo">Student Photo</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </div>
+        </section>
 
-                    </select>
-                </td>
-            </tr>
+        <!-- Address -->
+        <section class="group">
+            <h2>Address</h2>
 
+            <div class="field">
+                <label class="label" for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="Your city">
+            </div>
 
-            <tr>
-                <td>Student Photo: </td>
-                <td>
-                    <input type="file">
-                </td>
-            </tr>
+            <div class="field">
+                <label class="label" for="address">Address</label>
+                <textarea id="address" name="address" rows="4" placeholder="House no., street, area, pin code"></textarea>
+            </div>
+        </section>
 
-            <tr>
-                <td>City</td>
-                <td>
-                    <input type="text" size="50">
-                </td>
-            </tr>
-
-            <tr>
-                <td>Address: </td>
-                <td>
-                    <textarea cols="48" rows="5"> </textarea>
-                </td>
-            </tr>
-
-            <tr>
-                <td colspan="2" align="center"> </td>
-                <td>
-                <input type="submit" value="Register">
-                </td>
-            </tr>
-
-
-
-
-
-            
-
-
-
-        </table>
+        <div class="actions">
+            <button type="reset" class="btn btn-ghost">Clear</button>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </div>
 
     </form>
-    
+</main>
+
 </body>
 </html>
