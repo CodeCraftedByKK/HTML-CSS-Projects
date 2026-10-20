@@ -1,0 +1,40 @@
+.container{
+    background-color: beige;
+    border: 5px solid ;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    align-items: center;
+    
+
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    border: 2px solid brown;
+    margin: 2px;
+    padding: 2px;
+   
+}
+
+#box1{
+    background-color: yellow;
+
+}
+
+#box2{
+    background-color: blue;
+
+}
+
+#box3{
+    background-color: red;
+}
+
+#box4{
+    background-color: greenyellow;
+}

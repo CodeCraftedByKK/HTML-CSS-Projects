@@ -1,0 +1,17 @@
+.box{
+    height: 400px;
+    background-color: aqua;
+    border: solid red 2px;
+    width: 600px;
+}
+@media (max-width: 499px) {          /* small screens only */
+    .box { background-color: rgb(132, 0, 255); }   /* purple */
+}
+
+@media (min-width: 500px) and (max-width: 800px) {   /* medium screens only */
+    .box { background-color: greenyellow; }           /* greenyellow */
+}
+
+@media (min-width: 800px ) {         /* large screens only */
+    .box { background-color: aqua; }                  /* aqua */
+}

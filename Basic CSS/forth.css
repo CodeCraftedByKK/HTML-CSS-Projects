@@ -1,0 +1,44 @@
+.container{
+    background-color: beige;
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+}
+
+.box{
+    height: 400px;
+    border: solid red 2px;
+    width: 600px;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+}
+
+#box1{
+    background-color: black;
+}
+
+#box2{
+    background-color: greenyellow;
+}
+
+#box3{
+    background-color: yellow;
+}
+
+#box4{
+    background-color: blue;
+}
+@media (min-width: 640px) {
+    .container{
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 640px) {
+    .container{
+
+    flex-direction: column;
+    }
+}
+   
