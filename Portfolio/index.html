@@ -1,11 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kanhaiya Kumar Bhardwaj | Software Engineering Student</title>
+  <meta name="description" content="Portfolio of Kanhaiya Kumar Bhardwaj, first-year CSE student at GLA University.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome in my Portfolio</h1>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="#home" class="logo">KK<span>.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    <nav id="navLinks" class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#goals">Goals</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="hello">Hi, I'm</p>
+        <h1>Kanhaiya Kumar Bhardwaj</h1>
+        <p class="lead">First-year Computer Science Engineering student at GLA University, learning to build software and websites that help people.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">See my projects</a>
+          <a href="https://github.com/CodeCraftedByKK" class="btn" target="_blank" rel="noopener">GitHub profile</a>
+        </div>
+      </div>
+
+      <!-- Typed C snippet: the one animated moment on the page -->
+      <div class="code-card" aria-label="A short C program about me">
+        <div class="code-bar"><i></i><i></i><i></i><span>about.c</span></div>
+        <pre><code id="typed"></code><span class="cursor"></span></pre>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2>About me</h2>
+      <div class="about-grid">
+        <p>I'm studying B.Tech in Computer Science Engineering at GLA University. I'm interested in software engineering and web development, and I'm building my programming fundamentals in C while learning HTML and CSS.</p>
+        <p>I like solving problems, learning by building, and thinking about technology that can have a social impact. I use Git and GitHub to keep track of my work and to grow a profile I can be proud of.</p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <p class="sub">An honest view of where I am right now.</p>
+      <div class="skills-grid">
+        <article class="skill">
+          <h3>C</h3>
+          <span class="level">Beginner</span>
+          <p>Variables, operators, loops, arrays, strings, conditionals and basic algorithms.</p>
+        </article>
+        <article class="skill">
+          <h3>HTML</h3>
+          <span class="level">Learning</span>
+          <p>Structuring pages with semantic, readable markup.</p>
+        </article>
+        <article class="skill">
+          <h3>CSS</h3>
+          <span class="level">Learning</span>
+          <p>Styling small web projects and layouts.</p>
+        </article>
+        <article class="skill">
+          <h3>Git</h3>
+          <span class="level">Basics</span>
+          <p>Commits and basic repository management.</p>
+        </article>
+        <article class="skill">
+          <h3>GitHub</h3>
+          <span class="level">Basics</span>
+          <p>Pushing code with GitHub Desktop and keeping projects online.</p>
+        </article>
+      </div>
+      <p class="tools">Tools I use: Visual Studio Code, Git, GitHub, GitHub Desktop</p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <p class="sub">Select a card to read more. Each project shows its real status.</p>
+
+      <div class="projects-grid">
+        <!-- To add a live demo later, replace the disabled <span> with: <a class="btn" href="YOUR-LINK" target="_blank" rel="noopener">Live demo</a> -->
+        <article class="project">
+          <button class="project-head" aria-expanded="false">
+            <span class="status building">In progress</span>
+            <h3>Personal portfolio and HTML/CSS projects</h3>
+            <p>A homepage that organizes and links my small web projects.</p>
+          </button>
+          <div class="project-body">
+            <p>I'm building small web projects with HTML and CSS and creating a homepage to showcase my development journey and practical skills.</p>
+            <div class="project-links">
+              <span class="btn disabled">Live demo: not available yet</span>
+              <a class="btn" href="https://github.com/CodeCraftedByKK" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <button class="project-head" aria-expanded="false">
+            <span class="status planned">Planned project</span>
+            <h3>School bus tracking system</h3>
+            <p>Updates for parents about their children's school buses.</p>
+          </button>
+          <div class="project-body">
+            <p>An idea for a system that gives parents live location, arrival estimates and notifications. I haven't built it yet.</p>
+            <div class="project-links">
+              <span class="btn disabled">Live demo: not available yet</span>
+              <a class="btn" href="https://github.com/CodeCraftedByKK" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <button class="project-head" aria-expanded="false">
+            <span class="status planned">Planned project</span>
+            <h3>Disha: government scheme finder</h3>
+            <p>Helps people discover government schemes they may qualify for.</p>
+          </button>
+          <div class="project-body">
+            <p>An idea for a platform with eligibility checks, document lists, simple explanations and application guidance. I haven't built it yet.</p>
+            <div class="project-links">
+              <span class="btn disabled">Live demo: not available yet</span>
+              <a class="btn" href="https://github.com/CodeCraftedByKK" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <button class="project-head" aria-expanded="false">
+            <span class="status planned">Planned project</span>
+            <h3>BODH: Mathura–Vrindavan tourism</h3>
+            <p>A tourism website for the heritage of Mathura and Vrindavan.</p>
+          </button>
+          <div class="project-body">
+            <p>An idea for a website with cultural heritage information, route planning, multilingual assistance and tourist support. I haven't built it yet.</p>
+            <div class="project-links">
+              <span class="btn disabled">Live demo: not available yet</span>
+              <a class="btn" href="https://github.com/CodeCraftedByKK" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+                    --
+    <!-- LEARNING JOURNEY -->
+    <section id="journey" class="section">
+      <h2>Learning journey</h2>
+      <ol class="timeline">
+        <li>
+          <h3>Now</h3>
+          <p>C programming fundamentals, HTML and CSS, beginner problem-solving, and using Git and GitHub.</p>
+        </li>
+        <li>
+          <h3>Next</h3>
+          <p>Stronger C, data structures and algorithms, and more frontend projects.</p>
+        </li>
+        <li>
+          <h3>Later</h3>
+          <p>Turn my planned project ideas into working software.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- GOALS -->
+    <section id="goals" class="section">
+      <h2>Career goals</h2>
+      <ul class="goals">
+        <li>Explore software engineering as a career.</li>
+        <li>Strengthen C and data structures and algorithms.</li>
+        <li>Build practical frontend development skills.</li>
+        <li>Build projects that solve real-world problems.</li>
+        <li>Take part in coding competitions such as TCS CodeVita.</li>
+        <li>Learn from seniors, alumni and industry professionals.</li>
+        <li>Grow a strong GitHub profile and project portfolio.</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <h2>Contact</h2>
+      <p class="sub">The best place to follow my work is GitHub.</p>
+      <div class="hero-actions">
+        <a href="https://github.com/CodeCraftedByKK" class="btn btn-primary" target="_blank" rel="noopener">github.com/CodeCraftedByKK</a>
+        <!-- Add your email: <a class="btn" href="mailto:YOUR-EMAIL">Email me</a> -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Kanhaiya Kumar Bhardwaj</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
