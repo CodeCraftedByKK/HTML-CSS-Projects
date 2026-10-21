@@ -3,23 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout Webpage</title>
-    <link rel="stylesheet" href="chekoutstyle.css">
+    <title>Checkout Webpae</title>
+    <link rel="stylesheet" href="checkout.css">
 </head>
 <body>
     <div class="container">
         <div class="card">
-            <img src="Subscribe-to-Newsletter.webp" alt="newletter" class="banner">
+            <img src="checkoutimage.jpg" alt="checkoutimg">
+            <h2>Order Summary</h2> 
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi doloremque nemo explicabo id nisi unde laborum voluptatibus neque illo, dolor laboriosam, error porro earum rerum?</p>
 
-            <form action="">
-                <input type="text" name="name" id="name" placeholder="Enter Name: " required>
-                <br><br>
-                <input type="email" name="email" id="email" placeholder="Enter Your Email Id: " required>
-                <br><br>
+            <div id="amountBox">
 
-                <button type="submit">Subscribe</button>
-            </form>
+                <div class="planDetails">
+                <h3>Annual Plan</h3>
+                <p>$99/year</p>
+                <a href="#">Change</a>
+                </div>
 
+            </div>
+
+
+               <button id="payment"><b>Proceed to Payment</b></button>
+
+               <div id="cancel">
+                <a href="#">Cancel Order</a>
+               </div>
+         
         </div>
     </div>
 </body>
